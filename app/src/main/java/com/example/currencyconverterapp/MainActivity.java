@@ -22,17 +22,15 @@ public class MainActivity extends AppCompatActivity {
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        button2 = findViewById(R.id.button2);
-        //button2.setOnClickListener(new View.OnClickListener() {
-           // public void onClick(View v) {
-                //Toast.makeText(MainActivity.this, "Welcome!!", Toast.LENGTH_SHORT).show();
-                //Intent intent = new Intent(MainActivity.this, MainActivity2.class);
-                //startActivity(intent);
-        //    }
-        //});
+        button2 = findViewById(R.id.button2);button2.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Toast.makeText(MainActivity.this, "Welcome!!", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MainActivity.this, MainActivity2.class);
+                startActivity(intent);
+            }
+        });
     }
-    public void OnClick(View view){Intent intent = new Intent(MainActivity.this, MainActivity2.class);
-        startActivity(intent);}
+
 }
 
 
